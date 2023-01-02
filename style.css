@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(./imgs/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  background-color: white;
+  min-height: 100vh;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.titleArea {
+  display: flex;
+  justify-content: center;
+}
+
+.inputArea {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.taskInput:focus::-webkit-input-placeholder,
+textarea:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.taskInput + .addBtn {
+  margin-left: 10px;
+}
+
+.taskInput {
+  padding: 5px 10px;
+  width: 400px;
+  height: 40px;
+  font-size: 20px;
+}
+
+.taskInput:focus {
+  outline: none !important;
+  border-color: #5e86d1;
+  box-shadow: 0 0 10px #7382d8;
+  transition: all 0.2s ease;
+}
+
+.addBtn {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: #8bb4f2;
+  color: white;
+}
+
+.addBtn:hover {
+  background-color: blue;
+  transition: all 0.5s ease;
+}
+
+.taskArea {
+  border: 1px solid lightgray;
+}
+
+.taskTabs {
+  display: flex;
+  border-bottom: 1px solid lightgray;
+  position: relative;
+}
+
+.taskTabs div {
+  padding: 16px;
+  cursor: pointer;
+}
+
+#underLine {
+  height: 4px;
+  background-color: pink;
+  position: absolute;
+  width: 70px;
+  left: 0px;
+  top: 52px;
+  padding: 0px;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  border-bottom: 1px solid lightgray;
+}
+
+.taskTitle {
+  display: flex;
+  align-items: center;
+  width: calc(100% - 140px);
+  height: 100%;
+}
+
+.taskTitleDone {
+  background-color: rgb(207, 198, 198);
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  padding: 0px 8px;
+  width: 100%;
+  height: 100%;
+  font-weight: bolder;
+}
+
+.taskDone {
+  text-decoration: line-through;
+  color: rgb(216, 216, 216);
+}
+
+.taskBtns {
+  width: 140px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.checkBtn,
+.removeBtn {
+  width: 70px;
+  height: 100%;
+  font-size: 20px;
+  border: none;
+  background-color: transparent;
+}
+
+.checkBtn:hover {
+  background-color: rgb(137, 235, 137);
+  transition: all 0.5s ease;
+}
+
+.removeBtn:hover {
+  background-color: rgb(255, 65, 65);
+  transition: all 0.5s ease;
+}
+
+.checkBtn {
+  color: rgb(69, 207, 69);
+}
+
+.removeBtn {
+  color: red;
+}
+
+.rotate {
+  color: rgba(97, 86, 86, 0.281);
+}
