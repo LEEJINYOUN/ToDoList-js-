@@ -10,6 +10,10 @@ body {
   background-size: cover;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 .container {
   background-color: white;
   min-height: 100vh;
@@ -61,7 +65,7 @@ textarea:focus::-webkit-input-placeholder {
 }
 
 .addBtn:hover {
-  background-color: blue;
+  background-color: #3675d4;
   transition: all 0.5s ease;
 }
 
@@ -75,19 +79,23 @@ textarea:focus::-webkit-input-placeholder {
   position: relative;
 }
 
+.taskClick {
+  background-color: #93d7c0;
+  transition: 0.5s;
+}
+
 .taskTabs div {
   padding: 16px;
   cursor: pointer;
 }
 
-#underLine {
-  height: 4px;
-  background-color: pink;
-  position: absolute;
-  width: 70px;
-  left: 0px;
-  top: 52px;
-  padding: 0px;
+.taskBoard {
+  height: 750px;
+  overflow: auto;
+}
+
+.taskBoard::-webkit-scrollbar {
+  display: none;
 }
 
 .task {
@@ -140,16 +148,6 @@ textarea:focus::-webkit-input-placeholder {
   background-color: transparent;
 }
 
-.checkBtn:hover {
-  background-color: rgb(137, 235, 137);
-  transition: all 0.5s ease;
-}
-
-.removeBtn:hover {
-  background-color: rgb(255, 65, 65);
-  transition: all 0.5s ease;
-}
-
 .checkBtn {
   color: rgb(69, 207, 69);
 }
@@ -160,4 +158,14 @@ textarea:focus::-webkit-input-placeholder {
 
 .rotate {
   color: rgba(97, 86, 86, 0.281);
+}
+
+.checkBtn:hover {
+  background-color: rgb(137, 235, 137);
+  transition: all 0.5s ease;
+}
+
+.removeBtn:hover {
+  background-color: rgb(218, 157, 157);
+  transition: all 0.5s ease;
 }
