@@ -5,7 +5,6 @@ let taskList = [];
 const tabs = document.querySelectorAll(".taskTabs div");
 let mode = "all";
 let filterList = [];
-// const underLine = document.querySelector("#underLine");
 const all = document.querySelector("#all");
 const onGoing = document.querySelector("#ongoing");
 const done = document.querySelector("#done");
